@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>INDEX</title>
+{% endblock title %}
+
+{% block content %}
+  <h1>INDEX PAGE!</h1>
+  {% comment %} {% url 'app_name:url_name' %} {% endcomment %}
+  <a href="{% url 'pages:create' %}">CREATE</a>
+{% endblock content %}
