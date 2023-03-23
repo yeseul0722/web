@@ -6,7 +6,7 @@ def index(request):
     # class.manager.query API
     # 함수의 실행 결과를 변수에 담는다.
     articles = Article.objects.all()
-    return render(request, 'articles/index.html')
+    
     context = {
         # 특정 단어 혹은 알파벳을 영역 선택 후
         # ctrl + d 하면 같은 단어 다 찾아줌

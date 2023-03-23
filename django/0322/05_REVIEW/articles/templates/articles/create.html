@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>CREATE PAGE</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+            <!--제목, 내용을 입력할 수 있는 칸-->
+        {{ form.as_p }}
+    </form>
+
+{% endblock content %}
